@@ -1,0 +1,8 @@
+init_config:
+  min_collection_interval: 30                          # Metrics could be collected as often as every 30sec. By default 0.
+  default_lines_check: 100                             # Default number of last lines we read from file. Can be set in instance as "lines_check".
+  default_regex: 'error'                               # Default regular expression. Can be set in instance as "regex". Check search with option IGNORECASE=True.
+  default_metric_name: 'logs.error_count'          # Default metric name. Can be set in instance as "metric_name".
+  default_tag: []                                      # Default tag. Can be set in instance as list "tag".
+instances:
+  - logs: ''
